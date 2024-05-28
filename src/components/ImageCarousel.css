@@ -1,0 +1,18 @@
+.carousel {
+    overflow-x: scroll;
+    display: flex;
+    padding: 10px 0;
+  }
+  
+  .carousel-images {
+    display: flex;
+  }
+  
+  .carousel-images img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  
