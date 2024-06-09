@@ -1,0 +1,122 @@
+body {
+    background-color: #40609D;
+}
+.d-block w-100 {
+    max-height: 500px; /* Adjust as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+    position: absolute;
+}
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* เพิ่มพื้นหลังสีขาวโปร่งใส */
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff9203;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h1 {
+    margin-bottom: 100px; /* เพิ่มเว้นระหว่างหัวข้อ h1 กับแบบฟอร์ม */
+}
+.space {
+    color: #f9f9f9;
+}
+.navbar {
+    position: fixed; /* ติดตามที่ด้านบนของหน้าเว็บ */
+    width: 100%;
+    height: auto; /* ทำให้ Navbar กว้างเท่ากับหน้าจอ */
+    z-index: 1000; /* ให้ Navbar อยู่ข้างหน้าเสมอ */
+    top: 0; /* จัดให้ Navbar อยู่ที่ด้านบนของหน้าเว็บ */
+}
+.content {
+    min-height: 100vh;
+    padding-bottom: 50px; /* ความสูงของ nav-bottom */
+}
+
+.nav-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #cccccc;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-bottom select {
+    padding: 5px;
+    font-size: 16px;
+}
+.btn {
+    background-color: #ff9203;
+}
+.news-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item:last-child {
+    margin-bottom: 0;
+}
+
+.news-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-content {
+    font-size: 16px;
+    color: #555;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}

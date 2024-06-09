@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Travel App</title>
+		<!-- Using CDN for Bootstrap CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="mainpage.css">
+	</head>
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<!-- ปุ่ม3ขีด -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- ปุ่มlogin          -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#userlogin" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+					<img src="https://cdn-icons-png.flaticon.com/128/13156/13156443.png" width="30" height="30">
+				</button>
+
+				<a class="navbar-brand" href="#">Navbar</a>
+				<!-- fuction ปุ่ม3ขีด           -->
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+						</li>
+					</ul>
+					<!-- ฟีเจอร์ค้นหา -->
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+			<div id="userlogin">
+				<form>
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+					</div>
+					<div class="mb-3 form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Check me out</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+					<a href="">you are new user?</a>
+				</form>
+			</div>
+		</nav>
+
+
+
+
+
+
+		
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+			<div class="carousel-inner">
+				<div class="carousel-item">
+					<img src="https://media.istockphoto.com/id/483816132/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%97%E0%B8%B4%E0%B8%A7%E0%B8%97%E0%B8%B1%E0%B8%A8%E0%B8%99%E0%B9%8C%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF.jpg?s=612x612&w=0&k=20&c=QWTp6eyTqC-ARgzVdrFkW8oNCPhLzqH84Ce4Gs2t-SM=" class="d-block w-100" alt="Third Image">
+				</div>
+				<div class="carousel-item active">
+					<img src="https://wanderlustphotosblog.com/wp-content/uploads/2023/12/Phuket-Thailand-Travel-Guide-3512.webp" class="d-block w-100" alt="Phuket, Thailand">
+				</div>
+				<div class="carousel-item">
+					<img src="https://www.fodors.com/wp-content/uploads/2021/08/shutterstock_1107675575.jpg" class="d-block w-100" alt="Second Image">
+				</div>
+				<div class="carousel-item">
+					<img src="https://storage.googleapis.com/tagthai-prd-content/1690886013817_G6cuns_Pattaya_Cover_update_01_e870f801eb/1690886013817_G6cuns_Pattaya_Cover_update_01_e870f801eb.webp" class="d-block w-100" alt="Third Image">
+				</div>
+			</div>
+			<!-- user input date travel form -->
+			<div class="container">
+				<h2>Travel Date Form</h2>
+				<form>
+					<div class="form-group">
+						<label for="arrivalDate">Arrival Date:</label>
+						<input type="date" id="arrivalDate" name="arrivalDate">
+					</div>
+					<div class="form-group">
+						<label for="arrivalDate">End Date:</label>
+						<input type="date" id="arrivalDate" name="arrivalDate">
+					</div>
+					<div class="form-group">
+						<label for="numberOfPeople">Number of People:</label>
+						<input type="number" id="numberOfPeople" name="numberOfPeople" min="1">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+		<!-- ///////////////////////////////////////////////////////////////// -->
+
+		<div class="news-container">
+			<div class="news-item">
+				<div class="news-title">ข่าวที่ 1: หัวข้อข่าว</div>
+				<div class="news-content">นี่คือเนื้อหาข่าวที่ 1. คุณสามารถใส่เนื้อหาข่าวจริงได้ที่นี่. มันอาจมีหลายบรรทัดและรายละเอียดเพิ่มเติม.</div>
+				<div class="news-date">วันที่: 2024-06-09</div>
+			</div>
+			<div class="news-item">
+				<div class="news-title">ข่าวที่ 2: หัวข้อข่าว</div>
+				<div class="news-content">นี่คือเนื้อหาข่าวที่ 2. คุณสามารถใส่เนื้อหาข่าวจริงได้ที่นี่. มันอาจมีหลายบรรทัดและรายละเอียดเพิ่มเติม.</div>
+				<div class="news-date">วันที่: 2024-06-08</div>
+			</div>
+
+
+		<nav class="nav-bottom">
+			<select id="country" name="country" required>
+				<option value=""><img src="https://cdn-icons-png.flaticon.com/128/8088/8088396.png" alt=""></option>
+				<option value="thailand">ประเทศไทย</option>
+				<option value="laos">ลาว</option>
+				<option value="cambodia">กัมพูชา</option>
+				<option value="vietnam">เวียดนาม</option>
+			</select>
+		</nav>
+		<!-- Using CDN for Bootstrap JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+	</body>
+</html>
